@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_frqOoMTMEeu72fmehAMt1Q" name="Actividad 2">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_fst-kMTMEeu72fmehAMt1Q">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_P2t5wMTNEeu72fmehAMt1Q" name="clases.ito.poo">
+    <packagedElement xmi:type="uml:Class" xmi:id="_Sb3XEMTNEeu72fmehAMt1Q" name="Expedientes">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_j0KfoMTNEeu72fmehAMt1Q" name="nombre" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_q9n1oMTNEeu72fmehAMt1Q" name="rfc" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vvgQQMTNEeu72fmehAMt1Q" name="fechaNacimiento" visibility="private" type="_yKlLkMTNEeu72fmehAMt1Q"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_zh8xsMTOEeu72fmehAMt1Q" name="fechaConsultas" visibility="private" type="_yKlLkMTNEeu72fmehAMt1Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4As08MTOEeu72fmehAMt1Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4A0wwMTOEeu72fmehAMt1Q" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_-ey5wMTOEeu72fmehAMt1Q" name="sintomas" visibility="private" type="_NxcH8MTQEeu72fmehAMt1Q"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_iKpnUMTREeu72fmehAMt1Q" name="diagnostico" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_knmx8MTREeu72fmehAMt1Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_knutwMTREeu72fmehAMt1Q" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_mQR_8MTREeu72fmehAMt1Q" name="receta" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yROpUMTREeu72fmehAMt1Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yRV-EMTREeu72fmehAMt1Q" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_QLVFkMTSEeu72fmehAMt1Q" name="addConsulta">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_WyWc4MTSEeu72fmehAMt1Q" name="fecha" type="_yKlLkMTNEeu72fmehAMt1Q"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_eFWwcMTSEeu72fmehAMt1Q" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_gVyiAMTSEeu72fmehAMt1Q" name="calculaEdad">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_j_fzoMTSEeu72fmehAMt1Q" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NxcH8MTQEeu72fmehAMt1Q" name="Sintomas" visibility="public">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_RJwHkMTQEeu72fmehAMt1Q" name="temperatura" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_W3tv8MTQEeu72fmehAMt1Q" name="estatura" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_cOb9AMTQEeu72fmehAMt1Q" name="peso" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3Ue9QMTQEeu72fmehAMt1Q" name="sintomas" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A7_qEMTREeu72fmehAMt1Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A8FJoMTREeu72fmehAMt1Q" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_NME7oMTREeu72fmehAMt1Q" name="addSintomas">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_aCTnMMTREeu72fmehAMt1Q" name="newSintoma">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_eC02UMTREeu72fmehAMt1Q" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_yKlLkMTNEeu72fmehAMt1Q" name="java.time.LocalDate"/>
+</uml:Model>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_O4U2gMTbEeu72fmehAMt1Q" name="Actividad 2">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_O5FEcMTbEeu72fmehAMt1Q">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ySBvAMTbEeu72fmehAMt1Q" name="clases.ito.poo">
+    <packagedElement xmi:type="uml:Class" xmi:id="_y25WoMTbEeu72fmehAMt1Q" name="Transporte">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_I6RuQMTcEeu72fmehAMt1Q" name="marca" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_fiq3cMTcEeu72fmehAMt1Q" name="modelo" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_t4MLgMTcEeu72fmehAMt1Q" name="capacidadMaxima" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_VZ9soMTdEeu72fmehAMt1Q" name="fechaAdquisicion" visibility="private" type="_Hb0WwMTdEeu72fmehAMt1Q"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_IFF5EMTkEeu72fmehAMt1Q" name="viajesRealizados" visibility="private" type="_2mvFcMTbEeu72fmehAMt1Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YdrREMTkEeu72fmehAMt1Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Yd1CEMTkEeu72fmehAMt1Q" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_5Ij9cMTlEeu72fmehAMt1Q" name="addViaje">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_JbRW8MTmEeu72fmehAMt1Q" name="newViaje" type="_2mvFcMTbEeu72fmehAMt1Q"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_MMTUIMTmEeu72fmehAMt1Q" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_OjcxsMTmEeu72fmehAMt1Q" name="elimViaje">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_N4ceIMTsEeu72fmehAMt1Q" name="viaje" type="_2mvFcMTbEeu72fmehAMt1Q"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_QH8bkMTsEeu72fmehAMt1Q" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_2mvFcMTbEeu72fmehAMt1Q" name="Viaje">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="__DAm0MTeEeu72fmehAMt1Q" name="destino" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_H2U2kMTfEeu72fmehAMt1Q" name="direccion" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ZXhccMTfEeu72fmehAMt1Q" name="fechaViaje" visibility="private" type="_Hb0WwMTdEeu72fmehAMt1Q"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_qm1oIMTfEeu72fmehAMt1Q" name="fechaRegreso" visibility="private" type="_Hb0WwMTdEeu72fmehAMt1Q"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_6dY30MTkEeu72fmehAMt1Q" name="descripcionCarga" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_szeQEMTlEeu72fmehAMt1Q" name="monto" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </ownedAttribute>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_Hb0WwMTdEeu72fmehAMt1Q" name="java.time.LocalDate"/>
+</uml:Model>
